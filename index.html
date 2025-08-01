@@ -12,8 +12,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from 'https://w-mai.github.io/icu/icu_tool-90cd135f241ba6d4.js';
-const wasm = await init({ module_or_path: 'https://w-mai.github.io/icu/icu_tool-90cd135f241ba6d4_bg.wasm' });
+import init, * as bindings from '/icui/icu_tool-90cd135f241ba6d4.js';
+const wasm = await init({ module_or_path: '/icui/icu_tool-90cd135f241ba6d4_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -23,9 +23,9 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-    <base href="https://w-mai.github.io/icu/" />
+    <base href="/icui/" />
 
-    <link rel="icon" href="https://w-mai.github.io/icu/favicon-75c7018aae1346dd.png" integrity="sha384-tG1g0TzHzV7WGNxL4GQtHQeHGYsCCrEnsXLGDZkhbQaPDQ1B9W83sz/Pb0Q7B+Cj"/>
+    <link rel="icon" href="/icui/favicon-75c7018aae1346dd.png" integrity="sha384-tG1g0TzHzV7WGNxL4GQtHQeHGYsCCrEnsXLGDZkhbQaPDQ1B9W83sz/Pb0Q7B+Cj"/>
 
 
     
@@ -127,7 +127,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="https://w-mai.github.io/icu/icu_tool-90cd135f241ba6d4.js" crossorigin="anonymous" integrity="sha384-wI8ROwllBmbNpZFgoMnKepWOv5EM/Buwxal1My2kl4E0y7TTy+RdL0VtaZkz0czX"><link rel="preload" href="https://w-mai.github.io/icu/icu_tool-90cd135f241ba6d4_bg.wasm" crossorigin="anonymous" integrity="sha384-qiAZwu+6UyG6mRNI3AT4/elSARkCk8+wf1VwPrviwB1wqcBBJVW2ZyuM+Jv/A3lf" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/icui/icu_tool-90cd135f241ba6d4.js" crossorigin="anonymous" integrity="sha384-wI8ROwllBmbNpZFgoMnKepWOv5EM/Buwxal1My2kl4E0y7TTy+RdL0VtaZkz0czX"><link rel="preload" href="/icui/icu_tool-90cd135f241ba6d4_bg.wasm" crossorigin="anonymous" integrity="sha384-qiAZwu+6UyG6mRNI3AT4/elSARkCk8+wf1VwPrviwB1wqcBBJVW2ZyuM+Jv/A3lf" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
