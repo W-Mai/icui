@@ -2,8 +2,8 @@ var cacheName = 'icui-pwa';
 var filesToCache = [
   './',
   './index.html',
-  './icui.js',
-  './icui_bg.wasm',
+  './icu_tool.js',
+  './icu_tool_bg.wasm',
 ];
 
 /* Start the service worker and cache all of the app's content */
