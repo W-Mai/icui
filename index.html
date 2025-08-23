@@ -12,8 +12,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from '/icu_tool-c6f7ed0a0004d850.js';
-const wasm = await init({ module_or_path: '/icu_tool-c6f7ed0a0004d850_bg.wasm' });
+import init, * as bindings from '/icui/icu_tool-c6f7ed0a0004d850.js';
+const wasm = await init({ module_or_path: '/icui/icu_tool-c6f7ed0a0004d850_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -23,9 +23,9 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-    <base href="/" />
+    <base href="/icui/" />
 
-    <link rel="icon" href="/favicon-75c7018aae1346dd.png" integrity="sha384-tG1g0TzHzV7WGNxL4GQtHQeHGYsCCrEnsXLGDZkhbQaPDQ1B9W83sz/Pb0Q7B+Cj"/>
+    <link rel="icon" href="/icui/favicon-75c7018aae1346dd.png" integrity="sha384-tG1g0TzHzV7WGNxL4GQtHQeHGYsCCrEnsXLGDZkhbQaPDQ1B9W83sz/Pb0Q7B+Cj"/>
 
 
     
@@ -127,7 +127,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/icu_tool-c6f7ed0a0004d850.js" crossorigin="anonymous" integrity="sha384-jYMwvW8zZv/kxp5ewI9t6PqkbEBRyVx8mYI9t4JaFjDVO0m+JR9h/5oxO7N3ZbXC"><link rel="preload" href="/icu_tool-c6f7ed0a0004d850_bg.wasm" crossorigin="anonymous" integrity="sha384-zxZ277MzVit9hVGDQ7OWoJUKkJmTOy+iy1hGQkMBVN415fo8h99dVkY1zR1taO9J" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/icui/icu_tool-c6f7ed0a0004d850.js" crossorigin="anonymous" integrity="sha384-jYMwvW8zZv/kxp5ewI9t6PqkbEBRyVx8mYI9t4JaFjDVO0m+JR9h/5oxO7N3ZbXC"><link rel="preload" href="/icui/icu_tool-c6f7ed0a0004d850_bg.wasm" crossorigin="anonymous" integrity="sha384-zxZ277MzVit9hVGDQ7OWoJUKkJmTOy+iy1hGQkMBVN415fo8h99dVkY1zR1taO9J" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
