@@ -12,8 +12,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from '/icu_tool-8d18221576fc043f.js';
-const wasm = await init({ module_or_path: '/icu_tool-8d18221576fc043f_bg.wasm' });
+import init, * as bindings from '/icu_tool-3040d8fb9ddbe13a.js';
+const wasm = await init({ module_or_path: '/icu_tool-3040d8fb9ddbe13a_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -127,7 +127,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/icu_tool-8d18221576fc043f.js" crossorigin="anonymous" integrity="sha384-3JDMGhACGhxFJMaYTYMZ6wNOAGiQZs7+TQOoHR59jQehjqlaMA/i0hZLt0NLGUCG"><link rel="preload" href="/icu_tool-8d18221576fc043f_bg.wasm" crossorigin="anonymous" integrity="sha384-KiZyoOF0PTMsWjtEQaGgeu8X+Ykd4UVB3dJoWxPEI180VpWG4EJZYJja/inwW4si" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/icu_tool-3040d8fb9ddbe13a.js" crossorigin="anonymous" integrity="sha384-3JDMGhACGhxFJMaYTYMZ6wNOAGiQZs7+TQOoHR59jQehjqlaMA/i0hZLt0NLGUCG"><link rel="preload" href="/icu_tool-3040d8fb9ddbe13a_bg.wasm" crossorigin="anonymous" integrity="sha384-tsMqvCHSVTTqqZGMMu5snj7VOjSrQHuDAVQYlbfPcuwWcVfSTqdtrBiqJSGSZaDC" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
