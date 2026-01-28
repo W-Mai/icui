@@ -9,11 +9,21 @@
     <!-- change this to your project name -->
     <title>ICUI (ICU Web UI)</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-49NKJB9S8R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-49NKJB9S8R');
+    </script>
+
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from '/icu_tool-f0c8ff0c14e1c033.js';
-const wasm = await init({ module_or_path: '/icu_tool-f0c8ff0c14e1c033_bg.wasm' });
+import init, * as bindings from '/icu_tool-d90bd43e586413f3.js';
+const wasm = await init({ module_or_path: '/icu_tool-d90bd43e586413f3_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -127,7 +137,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="/icu_tool-f0c8ff0c14e1c033.js" crossorigin="anonymous" integrity="sha384-4gPlhdnpcFIKonwMZDBGR/b75PFITgXf9GNjjoFsENtm3ID57TkhDZr+dgIeAPS9"><link rel="preload" href="/icu_tool-f0c8ff0c14e1c033_bg.wasm" crossorigin="anonymous" integrity="sha384-1tsb7SrMt0eaYJL6o3B/2P43R0KWMX4g9a1YfN5jlFWdf8icQNBbK/2T9hYUhhQv" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/icu_tool-d90bd43e586413f3.js" crossorigin="anonymous" integrity="sha384-7a0HgJV+Fua+/IgPWkhZPxTqm1j5MPCf5CYEz32pbhcbGsq5lN9+uZk0tNKMAFh0"><link rel="preload" href="/icu_tool-d90bd43e586413f3_bg.wasm" crossorigin="anonymous" integrity="sha384-ZnDAMJPg52skv6pyW0HFf+TGeFnCnesUVeP/TB3YUNluqxcQwq6k1toOPGBuVAW3" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
